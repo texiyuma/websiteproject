@@ -1,0 +1,14 @@
+/components
+/public
+/src
+    /pages
+        /sample1.html   サンプルデータ
+        /sample2.html   サンプルデータ
+        /sample3.html   サンプルデータ
+        /test1          架空データ
+            /test.html  架空データ
+        /test2          架空データ
+            /test2.html 架空データ
+.gitignore
+.htaccess
+index.html

@@ -28,6 +28,12 @@
   </head>
   <body>
     <div class="container">
+      <!-- JavaScriptファイルのインポート -->
+      <script src="/public/assets/scripts/script.js"></script>
+
+      <!-- PHPファイルのインポート -->
+      <?php include '/public/assets/php/script.php'; ?>
+
       <h1>Welcome to our Sample Page</h1>
       <p>初回コミット用サンプルindex</p>
       <p>This is a sample HTML page for demonstration purposes.</p>
@@ -41,11 +47,10 @@
         viverra gravida nec non quam. Nulla nec libero sit amet risus
         sollicitudin eleifend.
       </p>
-      <a href="other-page.html"><button>他のページへ</button></a>
-      <a href="sample1"><button>他のページへ</button></a>
-      <a href="/sample1"><button>他のページへ</button></a>
-      <a href="/src/pages/sample1.html"><button>他のページへ</button></a>
-      <a href="../sample1.html">Sample 1ページへ</a>
-    </div>
+    <script>
+      function handleClick() {
+        document.getElementById("jsResult").innerText = "JavaScriptボタンがクリックされました。";
+      }
+    </script>
   </body>
 </html>

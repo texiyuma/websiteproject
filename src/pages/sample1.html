@@ -30,5 +30,17 @@
     <div class="container">
       <h1>Sample1</h1>
     </div>
+    <script src="/public/assets/scripts/script.js"></script>
+
+    <!-- JavaScriptでクリックイベントを処理 -->
+    <button onclick="handleClick()">JavaScriptでクリック</button>
+    <p id="jsResult"></p>
+
+    <script>
+      function handleClick() {
+        document.getElementById("jsResult").innerText =
+          "JavaScriptボタンがクリックされました。";
+      }
+    </script>
   </body>
 </html>

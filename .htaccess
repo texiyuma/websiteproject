@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# /sample1.html にアクセスされた場合、実際は /src/pages/sample1.html にアクセスする
+RewriteRule ^sample1.html$ /src/pages/sample1.html [L]
+
+# ① index.htmlからtest.htmlへのリライトルール
+RewriteRule ^test\.html$ /src/pages/test1/test.html [L]
+
+# ② index.htmlからsample.htmlへのリライトルール
+RewriteRule ^sample\.html$ /src/pages/sample1.html [L]
+
+# ③ sample2.htmlからtest2.htmlへのリライトルール
+RewriteRule ^test2\.html$ /src/pages/test2/test2.html [L]
