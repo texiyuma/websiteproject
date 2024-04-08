@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .header-container {
+        position: relative;
+        width: 100%;
+      }
+      .header-image {
+        width: 100%;
+        display: block;
+      }
+      .hamburger-menu {
+        position: absolute;
+        top: 10px; /* 上からの位置を調整 */
+        right: 10px; /* 右からの位置を調整 */
+        width: 50px; /* ハンバーガーメニューアイコンの幅を調整 */
+        height: 50px; /* ハンバーガーメニューアイコンの高さを調整 */
+        border: none; /* 枠線を削除 */
+      }
+      .hamburger-menu.active .line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+
+      .hamburger-menu.active .line:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger-menu.active .line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- ヘッダーのコンテンツ -->
+      <div class="header-container">
+        <img
+          src="/public/assets/image/headerImage/ヘッダー.png"
+          class="header-image"
+          alt="test"
+        />
+        <!-- ハンバーガーメニューアイコン -->
+        <iframe
+          src="../Molecules/humburgerMenu.html"
+          class="hamburger-menu"
+        ></iframe>
+      </div>
+    </header>
+  </body>
+</html>

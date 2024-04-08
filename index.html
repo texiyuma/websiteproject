@@ -3,54 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sample Page</title>
+    <title>猫といつまでも。</title>
+    <link
+      rel="icon"
+      href="./public/assets/image/Title.ico"
+      type="image/x-icon"
+    />
+
     <style>
       body {
-        font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f0f0f0;
       }
       .container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 1280px;
+        height: auto; /* 高さを自動調整 */
+        border: solid black 1px;
+        margin: 0 auto;
       }
       h1 {
         color: #333;
       }
-      p {
-        line-height: 1.6;
+
+      .headerArea {
+        width: 1280px;
+        height: auto;
+        border: solid black 1px;
       }
     </style>
   </head>
   <body>
+    <!-- header.html を表示 -->
+
     <div class="container">
-      <!-- JavaScriptファイルのインポート -->
-      <script src="/public/assets/scripts/script.js"></script>
+      <iframe
+        src="./components/Organisms/header.html"
+        width="100%"
+        height="auto"
+        frameborder="0"
+      ></iframe>
 
-      <!-- PHPファイルのインポート -->
-      <?php include '/public/assets/php/script.php'; ?>
-
-      <h1>Welcome to our Sample Page</h1>
-      <p>初回コミット用サンプルindex</p>
-      <p>This is a sample HTML page for demonstration purposes.</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget leo
-        nec sapien placerat interdum sed sed mauris. Nullam scelerisque ante nec
-        ligula vehicula, non tincidunt purus viverra.
-      </p>
-      <p>
-        Integer eu risus in nunc bibendum cursus. Proin in nunc sit amet eros
-        viverra gravida nec non quam. Nulla nec libero sit amet risus
-        sollicitudin eleifend.
-      </p>
-    <script>
-      function handleClick() {
-        document.getElementById("jsResult").innerText = "JavaScriptボタンがクリックされました。";
-      }
-    </script>
+      <p>hello World</p>
+    </div>
   </body>
 </html>
